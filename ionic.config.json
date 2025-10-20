@@ -1,0 +1,7 @@
+{
+  "name": "app-to-do-minicurso",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
