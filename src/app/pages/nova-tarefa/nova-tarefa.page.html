@@ -5,9 +5,41 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+
   <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Nova Tarefa</ion-title>
     </ion-toolbar>
   </ion-header>
+
+
+  <form class="ion-margin" id="nova-tarefa" [formGroup]="form">
+
+    <ion-input label="Título"
+              label-placement="floating"
+              fill="outline"
+              formControlName = "titulo"
+              placeholder="Adicione um Titulo"/>
+            <ion-textarea class="ion-margin-top"
+                          label = "Descrição"
+                          labelPlacement = "floating"
+                          fill ="outline"
+                          formControlName = "descricao"
+                          placeholder = "Adicione uma descricao"/>
+              <div class="ion-margin btns-nova-tarefa">
+                <ion-button color="danger"
+                            expand="block"
+                            (click) = "cancelarTarefa()"
+                            class="ion-margin"> Cancelar
+                          </ion-button>
+                <ion-button color="success"
+                            expand="block"
+                            [disabled] = "form.invalid"
+                            (click) = "salvarTarefa()"
+                            class="ion-margin"> Salvar
+                          </ion-button>
+              </div>
+
+  </form>
 </ion-content>

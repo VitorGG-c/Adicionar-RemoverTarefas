@@ -12,7 +12,7 @@ import { TarefasService } from 'src/app/services/tarefas.service';
 })
 export class NovaTarefaPage implements OnInit {
   form : FormGroup;
-  private formBuilder : FormBuilder = Inject(FormBuilder);
+  private formBuilder : FormBuilder = inject(FormBuilder);
   private tarefasService: TarefasService = inject(TarefasService);
   private router : Router = inject(Router);
   constructor() {
