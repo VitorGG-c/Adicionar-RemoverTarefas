@@ -13,6 +13,7 @@ export class TarefasPage implements OnInit {
   tarefasService: TarefasService = inject(TarefasService);
   
   dataHoje = new Date;
+  
   constructor() {}
 
   ngOnInit() {
