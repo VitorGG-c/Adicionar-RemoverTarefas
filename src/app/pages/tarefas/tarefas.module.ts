@@ -18,7 +18,4 @@ import { TarefasPage } from './tarefas.page';
   declarations: [TarefasPage]
 })
 export class TarefasPageModule {
-  private ID = "";
-  private titulo = "";
-  private descricao = "";
 }
